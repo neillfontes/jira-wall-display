@@ -1,0 +1,64 @@
+* {
+	font-family: "Helvetica Neue", "Arial", "Lucida Grande", sans-serif;
+	text-align: center;
+	line-height: 2;
+	color: #000;
+	text-transform: uppercase;
+}
+body {
+	background: #fff;
+}
+div.outer {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;	
+	border-top-style: none;
+	border-bottom-style: none;
+	border-right-style: none;
+}
+.main-left {
+	width: 350px;
+}
+.team-title {
+	font-size: 60px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	width: 100%;
+}
+.total-bugs {
+	font-size: 270px;
+	width: 100%;
+}
+.total-bugs-header {
+	font-size: 24px;
+	font-weight: bold;
+	height: 20px;
+}
+.detail-box {
+	height: 200px;
+}
+.detail {
+	height: 160px;
+	font-size: 100px;
+	font-weight: bold;
+	width: 100%;
+}
+.detail-header {
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	display: block;
+	height: 20px;
+}
+.full-view {
+	height: 100vh;
+}
+.pull-right {
+	float: right !important;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.clock {
+	width: 120px;
+	height: 120px;
+}

@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+	<title>Jira Team View</title>
+	<!-- jquery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+	<!-- bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	
+	<!-- timecircles -->
+	<script type="text/javascript" src="js/TimeCircles.js"></script>
+	<link href="css/TimeCircles.css" rel="stylesheet">    
+	
+	<!-- functions and css -->
+	<link rel="stylesheet" type="text/css" href="css/_light.css"> 
+	<!-- <link rel="stylesheet" type="text/css" href="css/_dark.css"> -->
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+	
+	<div class="container-fluid">
+		<!-- details -->
+		<div class="row">
+			<div class="col-md-6 outer full-view">
+				<div class="row">
+					<div class="col-md-6 team-title">Team-A</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="row">
+							  <div class="col-md-6 col-sm-6 total-bugs-header">New</div>
+							  <div class="col-md-6 total-bugs" id="team-a-total-bugs"></div>
+						    </div>	
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-6 detail-box"> 
+								<div class="row">
+								  <div class="col-md-6 col-sm-6 detail-header">Unassigned</div>
+								  <div class="col-md-6 detail" id="team-a-total-not-assigned"></div>
+								</div>
+							</div>
+							<div class="col-md-6 detail-box"> 
+								<div class="row">
+								  <div class="col-md-6 col-sm-6 detail-header">In Progress</div>
+								  <div class="col-md-6 detail" id="team-a-total-in-progress"></div>
+								</div>
+							</div>
+							<div class="col-md-6 detail-box"> 
+								<div class="row">
+								  <div class="col-md-6 col-sm-6 detail-header">Staging</div>
+								  <div class="col-md-6 detail" id="team-a-total-staging"></div>
+								</div>
+							</div>
+							<div class="col-md-6 detail-box"> 
+								<div class="row">
+								  <div class="col-md-6 col-sm-6 detail-header">Done</div>
+								  <div class="col-md-6 detail" id="team-a-done"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 outer full-view">
+				<div class="row team-title">
+					<div class="col-md-6 team-title">Team-B</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="row">
+							  <div class="col-md-6 col-sm-6 total-bugs-header">New</div>
+							  <div class="col-md-6 total-bugs" id="team-b-total-bugs"></div>
+						    </div>	
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-6 detail-box"> 
+								<div class="row">
+								  <div class="col-md-6 col-sm-6 detail-header">Unassigned</div>
+								  <div class="col-md-6 detail" id="team-b-total-not-assigned"></div>
+								</div>
+							</div>
+							<div class="col-md-6 detail-box"> 
+								<div class="row">
+								  <div class="col-md-6 col-sm-6 detail-header">In Progress</div>
+								  <div class="col-md-6 detail" id="team-b-total-in-progress"></div>
+								</div>
+							</div>
+							<div class="col-md-6 detail-box"> 
+								<div class="row">
+								  <div class="col-md-6 col-sm-6 detail-header">Staging</div>
+								  <div class="col-md-6 detail" id="team-b-total-staging"></div>
+								</div>
+							</div>
+							<div class="col-md-6 detail-box"> 
+								<div class="row">
+								  <div class="col-md-6 col-sm-6 detail-header">Done</div>
+								  <div class="col-md-6 detail" id="team-b-done"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="navbar navbar-fixed-bottom">
+		<div class="clock pull-right">
+			<div id="countdown" data-timer="60" style="width: 100%;"></div>
+		</div>
+	</div>
+	
+</body>
+	
+</html>
