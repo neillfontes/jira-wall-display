@@ -1,6 +1,6 @@
 # Jira Wall Display
 
-Tiny app to create a wall display for Agile Teams that use Jira. Don't lose track for your team's progress! 
+Tiny app to create a wall display for Agile Teams that use Jira. Don't lose track for your team's progress! I could not find anything more or less ready to do it, so I've gathered these pieces of tech to achieve the final result. It is suitable for queries to track down bug count or sprint progress in an Agile environment. Feel free to use it! There are some improvements to the HTML page, to be more flexible to support 1 to 4 teams and improvements to the js as well, but the distributed version is working as designed.
 
 ## Getting Started
 
@@ -46,7 +46,22 @@ var myVar = setInterval(function(){ myTimer(); $("#countdown").TimeCircles().res
 [Optional] Configure the color coding and thresholds:
 
 ```
-$(document).ajaxStop(function()
+$(document).ajaxStop(function() {
+...
+
+// between 0 and 3 green    #009933
+// between 4 and 7 yellow   #cccc00
+// greater than 8 red       #cc0000
+
+if (total > 0 && total <= 3) {
+	$(this).css( "color", "#009933" );
+} else if (total > 3 && total <= 7) {
+	$(this).css( "color", "#cccc00" );
+} else if (total >= 8) {
+	$(this).css( "color", "#cc0000" );
+}
+...
+}
 ```
 
 2-team.html
